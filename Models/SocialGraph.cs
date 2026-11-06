@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace CampusNet.Models
 {
+    // Clase que representa un grafo dirigido para la red social.
     public class SocialGraph
     {
         private readonly Dictionary<string, User> _vertices;

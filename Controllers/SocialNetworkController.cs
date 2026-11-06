@@ -2,8 +2,10 @@ using System.Collections.Generic;
 using CampusNet.Models;
 using CampusNet.Views;
 
+
 namespace CampusNet.Controllers
 {
+    // Controlar pirncipal para la aplicacion de red social.
     public class SocialNetworkController
     {
         private readonly SocialGraph _graph;
@@ -25,8 +27,11 @@ namespace CampusNet.Controllers
             ExecuteSocialQueries();
             ExecuteReachabilityTests();
             ExecuteCRUDOperations();
+
         }
 
+
+            // Grafo inicial  con 12 usuarios y 19 relaciones
         private void BuildInitialGraph()
         {
             // 12 Usuarios (Cumple: >= 12 vértices)
@@ -75,7 +80,7 @@ namespace CampusNet.Controllers
 
         private void ExecuteBFSTours()
         {
-            _view.ShowHeader("Recorridos BFS (3 Nodos Distintos)");
+            _view.ShowHeader("Recorrido BFS (3 Nodos Distintos)");
             string[] startNodes = { "U01", "U03", "U11" };
 
             foreach (var nodeId in startNodes)
@@ -96,6 +101,7 @@ namespace CampusNet.Controllers
         }
 
         private void ExecuteSocialQueries()
+    
         {
             var zeroInDegree = _graph.GetUsersWithZeroInDegree();
             var mostInfluential = _graph.GetMostInfluentialUsers();
@@ -112,6 +118,7 @@ namespace CampusNet.Controllers
             _view.ShowReachability("Karla Peña [U11]", "Elena Rostova [U05]", _graph.IsReachableBFS("U11", "U05"));
         }
 
+    // Implementación de operaciones CRUD
         private void ExecuteCRUDOperations()
         {
             _view.ShowHeader("Demostración de Operaciones CRUD");
@@ -137,6 +144,7 @@ namespace CampusNet.Controllers
 
             _view.ShowHeader("Estado Final del Grafo");
             _view.ShowAdjacencyList(_graph);
+            
         }
     }
 }

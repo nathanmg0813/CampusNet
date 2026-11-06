@@ -9,7 +9,7 @@ Este proyecto implementa la simulación de una red social académica dirigida ll
 | Nombre Completo | Rol / Responsabilidades en el Proyecto |
 | :--- | :--- |
 | **Jhonathan Martínez Gómez** | Implementación de la Capa Modelo (`Models/SocialGraph.cs`, `User.cs`, `Edge.cs`), algoritmos de recorridos **BFS / DFS**, detección de ciclos dirigidos y métricas de conectividad. |
-| **Johnatan Sierra Alvarez** | Implementación de la Capa Controlador (`Controllers/SocialNetworkController.cs`), secuenciación de casos de uso, control de duplicados y operaciones CRUD. |
+| **Johnatan Andres Sierra Alvarez** | Implementación de la Capa Controlador (`Controllers/SocialNetworkController.cs`), secuenciación de casos de uso, control de duplicados y operaciones CRUD. |
 | **Brisney Nicolle Saldarriaga Aguirre** | Implementación de la Capa Vista (`Views/GraphConsoleView.cs`), formateo e impresión en consola y documentación del proyecto. |
 
 ---

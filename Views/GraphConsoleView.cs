@@ -101,9 +101,9 @@ namespace CampusNet.Views
 
             Console.WriteLine("\n2. Usuarios más influyentes (Mayor grado de entrada):");
             foreach (var u in mostInfluential)
-                Console.WriteLine($"   - {u.Name} [{u.Id}] ({u.Role}) con {graph.GetInDegree(u.Id)} seguidores.");
+                Console.WriteLine ($"   - {u.Name} [{u.Id}] ({u.Role}) con {graph.GetInDegree(u.Id)} seguidores.");
 
-            Console.WriteLine("\n3. Usuarios más activos (Mayor grado de salida):");
+            Console.WriteLine("\n3. Usuarios más Activos (Mayor grado de salida):");
             foreach (var u in mostActive)
                 Console.WriteLine($"   - {u.Name} [{u.Id}] ({u.Role}) siguiendo a {graph.GetOutDegree(u.Id)} usuarios.");
         }
