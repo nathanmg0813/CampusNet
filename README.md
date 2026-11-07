@@ -1,6 +1,6 @@
 # 🎓 CampusNet - Simulación de Red Social Académica Dirigida (MVC en C#)
 
-Este proyecto implementa la simulación de una red social académica dirigida llamada **CampusNet**, desarrollada en **C# (.NET Console App)** aplicando el patrón de arquitectura **MVC estricto** y modelando las relaciones de seguimiento entre usuarios mediante una **Lista de Adyacencia** (`Dictionary<string, List<string>>`).
+Este proyecto implementa la simulación de una red social académica dirigida llamada **CampusNet**, desarrollada en **C# (.NET Console App)** aplicando el patrón de arquitectura **MVC estricto** y modelando las relaciones de seguimiento entre usuarios mediante una **Lista de Adyacencia** (`Dictionary<string, List<string>>`)...
 
 ---
 
@@ -14,7 +14,7 @@ Este proyecto implementa la simulación de una red social académica dirigida ll
 
 ---
 
-## 🛠️ Arquitectura del Proyecto (MVC Estricto)
+## 🛠️ Arquitectura del Proyecto (MVC Estricto).
 
 ```text
 CampusNet/
